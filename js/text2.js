@@ -1,5 +1,5 @@
 const carouselText = [
-  {text: "Created the site. 12/01/22", color: "rgb(0, 255, 200)"}
+  {text: "(12/01/22) Created the site and removed all non-working games", color: "rgb(0, 255, 200)"}
 ]
 
 // use this a a templete  {text: "text", color: "red"}
