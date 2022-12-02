@@ -1,4 +1,5 @@
 const carouselText = [
+  {text: "(12/02/22) Added request.html so you can request games", color: "rgb(0, 255, 200)"},
   {text: "(12/01/22) Created the site and removed all non-working games. Added world-cup.html so you can watch it in class 😁", color: "rgb(0, 255, 200)"}
 ]
 
