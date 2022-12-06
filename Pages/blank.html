@@ -1,2 +1,0 @@
-
-javascript:clicker:{const{Number}=self;const milliseconds=Number.parseInt(self.prompt('Time (Sec) untill click again?%20(I%20recommend%20setting%20it%20to%201)%27,%271%27));if(false===Number.isSafeInteger(milliseconds)){self.alert(%27Input%20was%20not%20an%20integer%27);break%20clicker;}let%20clientX=0,clientY=0;const{document}=self;self.setInterval(()=%3E{document.elementFromPoint(clientX,clientY)?.click?.();},milliseconds);document.addEventListener(%27mousemove%27,event=%3E{({clientX,clientY}=event);},{passive:true});}
