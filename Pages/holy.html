@@ -1,1 +1,23 @@
+<html>
+<head>
+<script>
+  function checkCredentials() {
+    var username = "admin";
+    var password = "password123";
+    var enteredUsername = prompt("Enter your username:");
+    var enteredPassword = prompt("Enter your password:");
+    if (enteredUsername === username && enteredPassword === password) {
+      alert("Welcome, " + username + "!");
+    } else {
+      alert("Incorrect username or password. Redirecting...");
+      window.location.replace("http://www.google.com");
+    }
+  }
+</script>
+</head>
+<body onload="checkCredentials()">
+</body>
+  <iframe src="https://holy.softcreed.repl.co" width="100%" height="100%" style="border:none;"></iframe>
+</html>
+
 <iframe src="https://holy.softcreed.repl.co" width="100%" height="100%" style="border:none;"></iframe>
