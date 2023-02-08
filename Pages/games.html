@@ -138,14 +138,22 @@
          
      
      </header>
-       </header>
       <div class="center-screen">
-      <script src="/js/search.js"></script>
-        </script> 
+      <p href="https://3kh0.github.io" class="rotate" style="margin-top: 20px;">3kh0.github.io</p>
+      <p class="rot" style="text-align: center;">gointerstellar.app</p>
+      <div style="margin-left: 20px; color: rgb(143, 5, 5); margin-top: 40px; padding-top: 10px;" id='randomtext'></div>
+
       <h1 style="font-family: 'Silkscreen', cursive; text-align:center;">Games</h1>
-      <p style="text-align:center;">Want more games?</p>
-      <ul id="Games">
-         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." >
+      <script src="/js/search.js"></script>
+      <script src="/js/games.js"></script>
+<script>
+    var sentences = new Array("Please give us game request!", "Do you want fact on here?", "Games for fun?", "noah is dumb", "yes", "Shoutout to ryan", "Request for games plz", "who am i?", "No u", "Pwease tell your friends", "https://discord.gg/UJ5NszstAv", "0rca#7089", "your mom", "did you know Avocados are a fruit, not a vegetable?", "did you know 0rca is human!?", "HUH?", "smileman52 wus here", "UwU", "If a cabby drives a cab, then who drives a bus?", "What has a neck but no head?", "Volley ball sucks hehe", "duke", "Meme.rip was here ;)");
+            console.log(Math.round(Math.random() * 7));
+            document.getElementById("test")
+            document.getElementById('randomtext').innerHTML = sentences[Math.round(Math.random() * sentences.length)];
+        </script>
+
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." >
       <div id="search" class="flex-container">
          <div>
             <div class="card">
