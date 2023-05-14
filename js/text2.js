@@ -1,4 +1,5 @@
 const carouselText = [
+  {text: "(5/14/23) The games page has a new V2 look! Go check it out", color: "rgb(0, 255, 200)"},
   {text: "(2/4/23) Proxies are out now! Updated the soundboard and will add more custom sounds.", color: "rgb(0, 255, 200)"},
   {text: "(1/31/23) Proxy page is now beta testing. Ill be giving out the username and password to some people to test. Will be all open soon!", color: "rgb(0, 255, 200)"},
   {text: "(1/26/23) Finally removed world cup from all the pages. Next update comes the proxies😈", color: "rgb(0, 255, 200)"},
