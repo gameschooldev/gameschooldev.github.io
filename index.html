@@ -3,67 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Make the iframe fill the entire viewport */
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none; /* Remove iframe border */
-        }
-
-        /* Style for the button */
-        button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 999; /* Ensure it's above the iframe */
-        }
-    </style>
-    <title>Embedded Website</title>
+    <title>Embedded Content</title>
 </head>
 <body>
-    <button id="runScriptButton">Run JavaScript in Iframe</button>
-    <iframe id="myIframe" src="https://schoology-fcboe.onrender.com"></iframe>
-
+    <div id="externalContent"></div>
     <script>
-        // Function to run JavaScript within the iframe
-        function runScriptInsideIframe() {
-            // Get the iframe element
-            const iframe = document.getElementById('myIframe');
-
-            // Check if the iframe has loaded
-            if (iframe.contentWindow) {
-                // Fetch the external JavaScript file
-                fetch('https://raw.githubusercontent.com/gameschooldev/gameschooldev.github.io/main/blooket.js')
-                    .then(response => response.text())
-                    .then(jsCode => {
-                        // Execute the fetched JavaScript code within the iframe
-                        iframe.contentWindow.eval(jsCode);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching or executing JavaScript:', error);
-                    });
-            } else {
-                console.error('Iframe not loaded');
-            }
-        }
-
-        // Attach a click event listener to the button
-        document.getElementById('runScriptButton').addEventListener('click', runScriptInsideIframe);
-
-        // Listen for messages from the iframe (optional)
-        window.addEventListener('message', function(event) {
-            // Check the origin of the message
-            if (event.origin !== iframe.src) {
-                return;
-            }
-
-            // Handle messages from the iframe if needed
-            console.log('Message received from iframe:', event.data);
-        });
+        // Fetch and display external content
+        const externalContentDiv = document.getElementById('externalContent');
+        fetch('https://play.blooket.com')
+            .then(response => response.text())
+            .then(html => {
+                externalContentDiv.innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching content:', error);
+            });
     </script>
 </body>
 </html>
