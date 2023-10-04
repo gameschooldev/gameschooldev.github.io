@@ -1,4 +1,5 @@
 const carouselText = [
+  {text: "(10/3/23) Okay so I dont work on this anymore but im just gonna add a game I want so dont expect anything more... but I did make 3 more working links so enjoy. Also if you just embed my site without any credit at all, like Leo, Bardia, Jason Hub, and all you other scumbags, you have no future in life :)", color: "rgb(0, 255, 200)"},
   {text: "(5/14/23) The games page has a new V2 look! Go check it out", color: "rgb(0, 255, 200)"},
   {text: "(2/4/23) Proxies are out now! Updated the soundboard and will add more custom sounds.", color: "rgb(0, 255, 200)"},
   {text: "(1/31/23) Proxy page is now beta testing. Ill be giving out the username and password to some people to test. Will be all open soon!", color: "rgb(0, 255, 200)"},
