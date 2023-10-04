@@ -9,6 +9,6 @@ window.location.href = "https://kings-schoolwork.vercel.app/Pages/games.html, ht
 }
 } catch (ex) {
 //Blocking Embed...
-window.location.href = "https://gamehub100.vercel.app/";
+window.location.href = "https://gameschooldev.github.io/skid-site/";
 }
 } 
