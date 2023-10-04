@@ -9,6 +9,6 @@ window.location.href = "https://example.com";
 }
 } catch (ex) {
 //Blocking Embed...
-window.location.href = "https://example.com/embedblock";
+window.location.href = "https://gamehub100.vercel.app/";
 }
 } 
