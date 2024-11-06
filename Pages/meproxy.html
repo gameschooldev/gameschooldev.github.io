@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQEQXLJVWV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Embed</title>
+    <style>
+        /* Simple CSS to center the password form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        #passwordForm {
+            display: block;
+        }
+        #embedContent {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; /* 100% of viewport width */
+            height: 100vh; /* 100% of viewport height */
+            margin: 0;
+        }
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Password form -->
+        <div id="passwordForm">
+            <h2>Enter Password to View Content</h2>
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
 
-  gtag('config', 'G-JQEQXLJVWV');
-</script>
-      <meta charset="UTF-8">
-      <meta name="description" content="Best Unblocked Games Pls join the discord : https://discord.gg/Sf8P3zG68H">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620758113142384" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="/css/index.css" />
-      <title>Home | Schoology</title>
-      <script src="/js/main.js"></script>
-           <div id="wrapper">
-        <div class="topnav">
-          <div class="nav">
-            <a href="index.html">Home</a>
-         
-         <a href="https://interstellar-ktom.onrender.com" class="game-link container">
-          <div class="game-tile">
-            <img class="game-icon" src="/Pages/games/cuttherope/images/favicon.ico" alt="icon" loading="lazy" />
-            <h1 class="game-title">Cut The Rope</h1>
-          </div>
-         </a>
+        <!-- Embed content, hidden initially -->
+        <div id="embedContent">
+            <h3>Protected Content</h3>
+            <!-- Replace this iframe with your actual embed content -->
+            <iframe src="privaturlproxy.800599.xyz" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        const correctPassword = 'hawktuah'; // Change this to your desired password
+
+        function checkPassword() {
+            const enteredPassword = document.getElementById('password').value;
+            if (enteredPassword === correctPassword) {
+                // Hide the password form and show the embed content
+                document.getElementById('passwordForm').style.display = 'none';
+                document.getElementById('embedContent').style.display = 'block';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
